@@ -15,3 +15,5 @@
 
 # Ignore Gemfile.lock
 *Gemfile.lock*
+
+/source/.DS_Store

@@ -15,16 +15,11 @@ footer, header, hgroup, menu, nav, section {
 html, body {
 	line-height: 1;
 	min-height:100%;
-	font-family:Artial, Verdana, sans-serif;
+	font-family:"Helvetica Neue", Arial, sans-serif;
 }
 
 body {
 	background: #eeeeee;
-	background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -moz-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -o-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: -ms-linear-gradient(top, #eeeeee, #cccccc 100%);
-	background: linear-gradient(top, #eeeeee, #cccccc 100%);
 	background-attachment:fixed;
 }
 
@@ -105,35 +100,13 @@ h4 {
 
 .skrollr-desktop #scrollbar {display:none;}
 
-#bg1, #bg2, #bg3 {
-	z-index:50;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:url(images/bubbles.png) repeat 0 0;
-}
-
-#bg2 {
-	z-index:49;
-	background-image:url(images/bubbles2.png);
-}
-
-#bg3 {
-	z-index:48;
-	background-image:url(images/bubbles3.png);
-}
-
-#intro {
+#browser {
 	width:80%;
 	left:50%;
 	top:1em;
 	margin-left:-40%;
 	padding:2em;
-	background:#fff;
 	text-align:center;
-	border-radius:1em;
-
 	-webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
@@ -143,11 +116,9 @@ h4 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-#intro .arrows {
-	font-size:2em;
-	color:#09f;
+	p {
+		margin-top: 10em;
+	}
 }
 
 #transform {
@@ -158,7 +129,7 @@ h4 {
 	text-align:center;
 	font-size:150%;
 
-	.transform-origin(50%, 50%);
+	/*.transform-origin(50%, 50%);*/
 }
 
 #properties {
