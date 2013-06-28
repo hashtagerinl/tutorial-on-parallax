@@ -100,14 +100,24 @@ h4 {
 
 .skrollr-desktop #scrollbar {display:none;}
 
-#browser {
-	width:80%;
-	left:50%;
-	top:1em;
-	margin-left:-40%;
-	padding:2em;
-	text-align:center;
-	-webkit-transform-origin:0 0;
+img {
+	width: 300px;
+}
+
+div.hand {
+	img {
+		width: 100px;
+	}
+	z-index: 99999;
+}
+
+div#browser {
+ img {
+ 	width: 500px;
+ }
+ top: 20%;
+ left: 20%;
+ 	-webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
 	-o-transform-origin:0 0;
@@ -116,9 +126,54 @@ h4 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	p {
-		margin-top: 10em;
+}
+
+div#cliq-profile {
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+div#cliq-suggested {
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+div#cliq-clique {
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+div#cliq-newsfeed {
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+div#cliq-public_chat {
+	img {
+		width: 400px;
 	}
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+div#cliq-private_chat {
+	img {
+		width: 600px;
+	}
+	top:10%;
+	width:50%;
+	z-index:101;
+}
+
+div#cliq-leaderboard {
+	top:10%;
+	width:50%;
+	z-index:101;
 }
 
 #transform {
@@ -128,8 +183,9 @@ h4 {
 	margin-left:-35%;
 	text-align:center;
 	font-size:150%;
-
-	/*.transform-origin(50%, 50%);*/
+	img {
+		width: 200px;
+	}
 }
 
 #properties {

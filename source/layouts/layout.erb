@@ -13,14 +13,16 @@
       <meta name="viewport" content="width=device-width">
 
       <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <%= stylesheet_link_tag "normalize", "main", "fixed-positioning" %>
+
   </head>
   
 <body class="<%= page_classes %>">
-  
+
     <%= yield %>
   
-  <%= javascript_include_tag  "skrollr.min" %>
+  <%= javascript_include_tag  "skrollr.min", "skrollr.stylesheets.min" %>
 
   <!--[if lt IE 9]>
   <script type="text/javascript" src="javascripts/skrollr.ie.min.js"></script>

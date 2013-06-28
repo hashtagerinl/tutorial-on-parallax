@@ -4,44 +4,91 @@ title: Welcome to CliqueMe
 
 <div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
 
-<div id="browser" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
-	<h1>Welcome to CliqueMe</h1>
-	<p>
-		<%= image_tag 'browser.png' %>
-	</p>
+<!-- Viewport at 1108px -->
+
+<!-- browser -->
+
+<div id="browser" data-0="left:100%;" data-500="opacity:1; left:25%;" data-4100="" data-4500="opacity:0;">
+	<%= image_tag 'browser.png' %>
 </div>
 
-<div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" data-1600="" data-1700="transform:scale(5) rotate(3240deg);opacity:0;">
-	<img src="images/cliq-profile.png" style="width: 200px;">
+<div class="hand" id="hand-white" data-0="bottom:-50%;" 
+data-2300="bottom:40%;left:60%;opacity:1" 
+data-3300="transform:scale(1)" 
+data-3500="transform:scale(.70)" 
+data-3700="transform:scale(1)"
+data-3900=""
+data-5300="opacity:0;">
+	<%= image_tag 'hand-white.png' %>
 </div>
 
-<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
-	<p>
-		<%= image_tag 'cliq-suggested.png' %>
-	</p>
+<div class="hand" id="hand-red"
+data-5400="bottom:40%;left:60%;opacity:0;"
+data-5500="bottom:40%;left:60%;opacity:1;"
+data-5600=""
+data-5800="bottom:8%;left:35%;"
+data-5900="transform:scale(1)"
+data-6100="transform:scale(.70)"
+data-6300="transform:scale(1)"
+data-6900="bottom:46%;"
+data-6900="transform:scale(1)"
+data-7100="transform:scale(.70)"
+data-7300="transform:scale(1)">
+	<%= image_tag 'hand-red.png' %>
 </div>
 
-<div id="easing_wrapper" data-0="display:none;" data-3900="display:block;" data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
-	<div id="easing" data-3900="left:100%" data-4600="left:25%;">
-		<h2>Newsfeed</h2>
-		<img src="images/cliq-newsfeed.png" style="width: 300px;">
-		<p data-5900="opacity:0;font-size:100%;" data-6500="opacity:1;font-size:150%;">Check to see the most recent activities</p>
-		<p>let me dim the <span data-3900="" data-4900="color[swing]:rgb(0,0,0);" data-5900="color:rgb(255,255,0);">lights</span> for this one...</p>
+<!-- profile -->
+
+<div id="easing_wrapper" 
+data-0="display:none;" 
+data-4000="display:block;" 
+data-4300="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" 
+data-5300="background:rgba(0,0,0,1);color:rgb(255,255,255);" 
+data-7400="top:0%;" 
+data-8000="top:-100%;">
+	<div id="cliq-profile" data-4300="left:100%" data-5000="left:25%;" data-6400="opacity:1" data-6600="opacity:0"> 
+		<%= image_tag 'cliq-profile.png' %>
 	</div>
-
-	<div class="drop" data-6500="left:15%;bottom:100%;" data-9500="bottom:0%;">linear</div>
-	<div class="drop" data-6500="left:25%;bottom[quadratic]:100%;" data-9500="bottom:0%;">Quadratic</div>
-	<div class="drop" data-6500="left:35%;bottom[cubic]:100%;" data-9500="bottom:0%;">cubic</div>
-	<div class="drop" data-6500="left:45%;bottom[swing]:100%;" data-9500="bottom:0%;">swing</div>
-	<div class="drop" data-6500="left:55%;bottom[WTF]:100%;" data-9500="bottom:0%;">WTF</div>
-	<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
-	<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div>
 </div>
 
-<div id="download" data-9500="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,100,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(50,230,255);border-width:10px;">
-	<h2>Try CliqueMe</h2>
-		<%= image_tag 'cliq-suggested.png', width: '250px' %>
-	</p>
+<!-- suggested cliques --> 
+
+<div id="cliq-suggested" 
+data-6500="left:25%;opacity:0;" 
+data-6800="opacity:1;">
+	<%= image_tag 'cliq-suggested.png' %>
 </div>
+
+<!-- my clique 
+
+<div id="cliq-clique" data-2000="left:100%" data-3000="left:25%;">
+	<%= image_tag 'cliq-clique.png' %>
+</div>
+
+<!-- newsfeed 
+
+<div id="cliq-newsfeed" data-3000="left:100%" data-4000="left:25%;">
+	<%= image_tag 'cliq-newsfeed.png' %>
+</div>
+
+<!-- public chat 
+
+<div id="cliq-public_chat" data-4000="left:100%" data-5000="left:25%;">
+	<%= image_tag 'cliq-public_chat.png' %>
+</div>
+
+<!-- private chat 
+
+<div id="cliq-private_chat" data-5000="left:100%" data-6000="left:25%;">
+	<%= image_tag 'cliq-private_chat.png' %>
+</div>
+
+<!-- leaderboard 
+
+<div id="cliq-leaderboard" data-6000="left:100%" data-7000="left:25%;">
+	<%= image_tag 'cliq-leaderboard.png' %>
+</div>
+
+-->
 
 <div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
