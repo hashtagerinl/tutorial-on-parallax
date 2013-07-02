@@ -19,6 +19,8 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    font-awesome-middleman (0.0.1)
+      middleman (~> 3.0.0)
     fssm (0.2.10)
     haml (4.0.3)
       tilt
@@ -120,6 +122,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  font-awesome-middleman
   middleman (~> 3.0.14)
   middleman-gh-pages
   middleman-livereload

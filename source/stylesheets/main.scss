@@ -15,7 +15,7 @@ footer, header, hgroup, menu, nav, section {
 html, body {
 	line-height: 1;
 	min-height:100%;
-	font-family:"Helvetica Neue", Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 body {
@@ -111,6 +111,13 @@ div.hand {
 	z-index: 9999;
 }
 
+div#instructions {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	text-align:center;
+}
+
 div#browser {
  img {
  	width: 500px;
@@ -138,12 +145,99 @@ div#cliq-suggested {
 	top:10%;
 	width:50%;
 	z-index:101;
+	#sashimi {
+		position: absolute;
+		top: 192px;
+		left: 35px;
+		img {
+			width: 255px;
+			z-index:102;
+		}
+	}
 }
 
 div#cliq-clique {
 	top:10%;
 	width:50%;
 	z-index:101;
+}
+
+div.newsfeed {
+	span {
+		color: #ff5544;
+	}
+	h3 {
+		color: #878484;
+	}
+}
+
+.drop {
+	font-weight:normal;
+	width: 300px;
+	padding: 1em;
+	p {
+		font-style: normal;
+		font-size: 18px;
+		margin-top: 28px;
+		line-height: 20px;
+	}
+	background: white;
+	border: 1px solid gray;
+
+}
+
+.cliqueme-icon {
+	position: relative;
+	font-size: 18px;
+	padding-right: 5px;
+}
+
+[class*="cliqueme-icon-"], [class^="cliqueme-icon-"] {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+}
+
+.cliqueme-time {
+	position: absolute;
+	right: 30px;
+	font-size: 12px;
+	color: #939393;
+	font-style: italic;
+}
+
+.highlight	{
+	color: #ff5544;
+	text-decoration: none;
+	outline: 0;
+}
+
+
+.cliqueme-icon-time:before {
+	content: "\f017";
+}
+
+.cliqueme-icon-envelope:before {
+	content: "\f0e0";
+}
+
+.cliqueme-icon-user:before {
+content: "\f007";
+}
+
+.cliqueme-icon-thumbs-up:before {
+content: "\f087";
+}
+
+.cliqueme-icon-bookmark:before {
+content: "\f02E";
+}
+
+.cliqueme-icon-group:before {
+content: "\F0C0";
 }
 
 div#cliq-newsfeed {
@@ -159,6 +253,10 @@ div#cliq-public_chat {
 	top:8%;
 	width:50%;
 	z-index:102;
+	#chat_animate{
+		top: 383px;
+		z-index: 102;
+	}
 }
 
 div#cliq-private_chat {
@@ -168,12 +266,24 @@ div#cliq-private_chat {
 	top:10%;
 	width:50%;
 	z-index:101;
+	#chat_animate{
+		top: 280px;
+		z-index: 102;
+		img {
+			width: 280px;
+		}
+	}
 }
 
 div#cliq-leaderboard {
 	top:10%;
 	width:50%;
 	z-index:101;
+}
+
+div#cliq-leaderboard_flourish {
+	top: 40%;
+	z-index:205;
 }
 
 #transform {
@@ -208,12 +318,6 @@ div#cliq-leaderboard {
 	top:10%;
 	width:50%;
 	z-index:101;
-}
-
-.drop {
-	background:#09f;
-	font-weight:bold;
-	padding:1em;
 }
 
 #download {
