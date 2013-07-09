@@ -7,12 +7,14 @@ title: Welcome to CliqueMe
 <!-- Viewport at 1108px -->
 
 <div id="instructions">
-	<h1>Scroll down</h1>
+	<h1>Clicking through CliqueMe</h1>
+	<h3>A visual primer</h3>
+	<i>(Scroll down)</i>
 </div>
 
 <!-- browser -->
 
-<div id="browser" data-0="left:100%;" data-500="opacity:1; left:25%;" data-4100="" data-4500="opacity:0;">
+<div id="browser" data-0="left:1850px;" data-500="opacity:1; left:265px;" data-4100="" data-4500="opacity:0;">
 	<%= image_tag 'browser.png' %>
 </div>
 
@@ -27,8 +29,8 @@ data-12000="top:-100%;">
 	<!-- profile -->
 
 	<div id="cliq-profile" 
-	data-4300="left:100%" 
-	data-5000="left:25%;" 
+	data-4300="left:1850px" 
+	data-5000="left:265px;" 
 	data-6400="opacity:1" 
 	data-6600="opacity:0"> 
 		<%= image_tag 'cliq-profile.png' %>
@@ -38,7 +40,7 @@ data-12000="top:-100%;">
 	<!-- suggested cliques --> 
 
 	<div id="cliq-suggested" 
-	data-6500="bottom:15%;left:25%;opacity:0;" 
+	data-6500="left:265px;opacity:0;" 
 	data-6800="opacity:1;"
 	data-7600=""
 	data-7800="opacity:0;">
@@ -54,7 +56,7 @@ data-12000="top:-100%;">
 	<!-- my clique -->
 
 	<div id="cliq-clique" 
-	data-7700="left:25%;opacity:0" 
+	data-7700="left:265px;opacity:0" 
 	data-8000="opacity:1;"
 	data-8500=""
 	data-9000="opacity:0;">
@@ -62,19 +64,19 @@ data-12000="top:-100%;">
 	</div>
 
 	<div class="hand" id="hand-red"
-	data-5400="bottom:40%;left:60%;opacity:0;"
-	data-5500="bottom:40%;left:60%;opacity:1;"
+	data-5400="top:380px;left:680px;opacity:0;"
+	data-5500="top:540px;left:380px;opacity:1;"
 	data-5600=""
-	data-5800="bottom:8%;left:35%;"
+	data-5800="top:550px;left:350px;"
 	data-5900="transform:scale(1)"
 	data-6100="transform:scale(.70)"
 	data-6300="transform:scale(1)"
-	data-6900="bottom:46%;"
+	data-6900="top:280px;"
 	data-6900="transform:scale(1)"
 	data-7100="transform:scale(.70)"
 	data-7300="transform:scale(1)"
 	data-7500=""
-	data-7800="bottom:5%;left:27%"
+	data-7800="top:587px;left:280px"
 	data-7900="transform:scale(1)"
 	data-8100="transform:scale(.70)"
 	data-8300="transform:scale(1)"
@@ -92,7 +94,7 @@ data-12000="top:-100%;">
 				You've been accepted into the <span class="highlight">The Gustatory Tales</span> clique.
 			</p>
 		</div>
-		<div class="drop" data-12000="left:25%;bottom[quadratic]:100%;" data-15000="bottom:-30%;">
+		<div class="drop" data-12000="left:265px;bottom[quadratic]:100%;" data-15000="bottom:-30%;">
 			<span class="cliqueme-time"><i class="cliqueme-icon cliqueme-icon-time"></i><span>1 week ago</span></span>
 			<p>
 				<i class="cliqueme-icon cliqueme-icon-user"></i>
@@ -135,12 +137,12 @@ data-12000="top:-100%;">
 			</p></div>
 
 <div id="cliq-newsfeed" 
-data-8900="left:25%;opacity:0" 
+data-8900="left:265px;opacity:0" 
 data-10600=""
 data-12000="opacity:1"
-data-12000="left:50%;"
+data-12000="left:280px;"
 data-12700=""
-data-13900="left:60%;"
+data-13900="left:664px;"
 data-23000=""
 data-23001="opacity:0">
 	<%= image_tag 'cliq-newsfeed.png' %>
@@ -149,8 +151,8 @@ data-23001="opacity:0">
 <!-- public chat -->
 
 <div id="cliq-public_chat" 
-data-15100="left:60%;opacity:0" 
-data-15400="left:26%;opacity:1"
+data-15100="left:664px;opacity:0" 
+data-15400="left:288px;opacity:1"
 data-23000=""
 data-23001="opacity:0">
 	<%= image_tag 'cliq-public_chat.png' %>
@@ -163,74 +165,77 @@ data-23001="opacity:0">
 <!-- private chat -->
 
 <div id="cliq-private_chat" 
-data-23000="left:60%;opacity:0"
-data-23401="left:26%;opacity:1"
+data-23000="left:664px;opacity:0"
+data-23401="left:288px;opacity:1"
 data-28000=""
 data-28400="opacity:0">
 	<%= image_tag 'cliq-private_chat.png' %>
 	<div id="chat_animate" data-24000="left:48px;opacity:0" data-24001="left:48px;opacity:1">
-		<%= image_tag 'cliq-private_chat.gif' %>
+		<%#= image_tag 'cliq-private_chat.gif' %>
 	</div>
 </div>
 
 <!-- leaderboard -->
 
-<div id="cliq-leaderboard" data-28000="left:100%" data-28600="left:25%;" data-37800="opacity:1" data-39000="opacity:0">
+<div id="cliq-leaderboard" data-28000="left:1850px" data-28600="left:265px;" data-37800="opacity:1" data-39000="opacity:0">
 	<%= image_tag 'cliq-leaderboard.png' %>
 </div>
 
-<div id="cliq-leaderboard_flourish" data-29000="opacity:0" data-35000="left:60%;opacity:1"
+<div id="cliq-leaderboard_flourish" data-29000="opacity:0" data-35000="top:280px;left:680px;opacity:1"
 data-37000=""
-data-37400="transform:scale(1)" 
-data-37600="transform:scale(.70)" 
-data-37800="transform:scale(1)"
-data-39000="transform:scale(50);opacity:0">
-	<%= image_tag 'cliq-leaderboard_flourish.png' %>
+data-37400=""
+data-39000="opacity:0">
+	<p>almost there ...</p>
+	<%#= image_tag 'cliq-leaderboard_flourish.png' %>
 </div>
 
-<div id="cliqueme-logo" data-39000="opacity:0" data-39005="opacity:1">
+<div id="cliqueme-logo" data-39000="opacity:0;left:360px;top:240px" data-39005="opacity:1">
 	<%= image_tag 'cliqueme-logo.png' %>
+	<div id="ending" data-39500="opacity:0;left:80px;top:100px" data-39700="opacity:1;">
+		Clique. Connect. Explore.
+	</div>	
 </div>
 
+	<div id="corner-bottom" data-39500="opacity:0;left:680px;top:700px" data-39700="opacity:1;">
+		<a href="#instructions">Back to the Top</a>
+	</div>
 
-<div class="hand" id="hand-white" data-0="bottom:-50%;" 
-data-2300="bottom:40%;left:60%;opacity:1" 
+<div class="hand" id="hand-white" data-0="top:-150px;" 
+data-2300="top:380px;left:680px;opacity:1" 
 data-3300="transform:scale(1)" 
 data-3500="transform:scale(.70)" 
 data-3700="transform:scale(1)"
 data-3900=""
 data-5300="opacity:0;"
-data-19499=""
-data-19500="opacity:1;"
-data-19600="bottom:14%;left:65%"
+data-13400=""
+data-13500="opacity:1;"
+data-14000="top:180px;left:650px;"
+data-14200=""
+data-14600="transform:scale(1)" 
+data-14800="transform:scale(.70)" 
+data-15000="transform:scale(1)"
+data-19000=""
+data-19600="top:550px;left:720px;"
 data-22400="transform:scale(1)" 
 data-22600="transform:scale(.70)" 
 data-22800="transform:scale(1)"
 data-26600=""
-data-26800="bottom:3%;left:70%;"
+data-26800="top:590px;left:800px;"
 data-27000=""
 data-27400="transform:scale(1)" 
 data-27600="transform:scale(.70)" 
 data-27800="transform:scale(1)"
 data-33000=""
-data-36000="bottom:40%;"
+data-36000="top:360px;"
 data-37000=""
 data-37400="transform:scale(1)" 
 data-37600="transform:scale(.70)" 
 data-37800="transform:scale(1)"
 data-39000=""
 data-39300="transform:rotate(0deg);transform-origin:0 0;"
-data-39500="transform:rotate(100deg);left:30%;bottom:55%;">
+data-39500="transform:rotate(100deg);left:350px;top:250px;">
 	<%= image_tag 'hand-white.png' %>
 </div>
 
-
-<div id="tom-hanks" data-39405="left:100%" data-39605="left:60%;top:15%;transform:rotate(0deg);transform-origin:0 0;" data-39705="left:65%;top:15%;transform:rotate(25deg);transform-origin:0 0;">
-	<%= image_tag 'tom-hanks.png' %>
-</div>
-
-<div id="egg-sandwhich" data-43605="left:0%;top:100%" data-43705="left:30%;top:45%">
-	<%= image_tag 'egg-sandwhich.gif' %>
-</div>
 
 <div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>

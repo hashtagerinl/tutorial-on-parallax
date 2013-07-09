@@ -122,8 +122,7 @@ div#browser {
  img {
  	width: 500px;
  }
- top: 20%;
- left: 20%;
+ top: 200px;
  	-webkit-transform-origin:0 0;
 	-moz-transform-origin:0 0;
 	-ms-transform-origin:0 0;
@@ -282,15 +281,25 @@ div#cliq-leaderboard {
 }
 
 div#cliq-leaderboard_flourish {
-	top: 40%;
+	top: 330px;
 	z-index:205;
+	p {
+		font-size: 55px;
+	}
 }
 
 div#cliqueme-logo {
 	margin-top: 50px;
 	left: 350px;
+	#ending {
+	 font-size: 50px;
+	}
 }
 
+#corner-bottom {
+  font-size: 15px;
+}
+	
 #transform {
 	width:70%;
 	left:50%;
